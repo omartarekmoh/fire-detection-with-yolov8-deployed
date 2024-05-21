@@ -29,9 +29,17 @@ This project captures frames from a webcam, processes them to detect fire, and s
     ```bash
     python app.py
     ```
+
 3. To start capturing and sending frames, run:
     ```bash
     python send.py
+    ```
+
+4. Make sure CUDA is available on your system to leverage GPU acceleration for the YOLO model.
+
+5. If you want to change the camera used, edit `send.py` and change the number in the following line to the index of your desired camera:
+    ```python
+    cap = cv2.VideoCapture(0)
     ```
 
 ## Project Overview
