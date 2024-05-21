@@ -1,1 +1,47 @@
-"# fire-detection-with-yolov8-deployed" 
+# Real-Time Frame Processing with Flask
+
+This project captures frames from a webcam, processes them to detect fire, and sends the processed frames to a Flask server.
+
+## Files
+
+- `app.py`: Captures frames from the webcam and sends them to the Flask server.
+- `process.py`: Contains the function to process the frames and detect fire.
+- `send.py`: (Duplicate of app.py) Captures and sends frames to the Flask server.
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/your-repo-name.git
+    cd your-repo-name
+    ```
+
+2. Install the required libraries:
+    ```bash
+    pip install opencv-python-headless requests numpy cvzone
+    ```
+
+## Usage
+
+1. Ensure you have a Flask server running to receive the frames.
+
+2. To start capturing and sending frames, run:
+    ```bash
+    python app.py
+    ```
+
+## Project Overview
+
+### app.py / send.py
+
+- These scripts capture frames from the default webcam.
+- The captured frames are encoded as JPEG images.
+- The encoded frames are sent to a specified Flask server URL.
+
+### process.py
+
+- This script contains a function to process the frames and detect fire.
+- It uses `cvzone` and `cv2` for image processing.
+- Detected fire areas are highlighted with a rectangle and labeled with a confidence score.
+
+This project demonstrates real-time frame capture, processing, and transmission using OpenCV and Flask.
