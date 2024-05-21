@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Stream</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .livestream-container {
+            border: 2px solid #e2e8f0;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation bar -->
+    <nav class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold">Live Stream</div>
+                <!-- Add navigation links here if needed -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content area -->
+    <div class="container mx-auto px-4 mt-8">
+        <!-- Live stream container with border -->
+        <div class="livestream-container">
+            <img id="live-stream" src="http://127.0.0.1:8000/video_feed" class="w-full h-auto" alt="Live Stream">
+        </div>
+    </div>
+</body>
+</html>
