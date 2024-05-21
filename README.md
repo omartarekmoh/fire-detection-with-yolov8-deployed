@@ -12,8 +12,8 @@ This project captures frames from a webcam, processes them to detect fire, and s
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/your-repo-name.git
-    cd your-repo-name
+    git clone https://github.com/omartarekmoh/Real-Time-Frame-Processing-with-Flask.git
+    cd Real-Time-Frame-Processing-with-Flask
     ```
 
 2. Install the required libraries:
