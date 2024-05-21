@@ -25,9 +25,13 @@ This project captures frames from a webcam, processes them to detect fire, and s
 
 1. Ensure you have a Flask server running to receive the frames.
 
-2. To start capturing and sending frames, run:
+2. To start the server, run:
     ```bash
     python app.py
+    ```
+3. To start capturing and sending frames, run:
+    ```bash
+    python send.py
     ```
 
 ## Project Overview
