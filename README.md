@@ -18,7 +18,7 @@ This project captures frames from a webcam, processes them to detect fire, and s
 
 2. Install the required libraries:
     ```bash
-    pip install opencv-python-headless requests numpy cvzone
+    pip install opencv-python-headless requests numpy cvzone Flask ultralytics
     ```
 
 ## Usage
